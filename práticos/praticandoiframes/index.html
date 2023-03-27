@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praticando</title>
+    <style>
+        iframe {
+            width: 500px;
+            height: 500px;
+        }
+        body {
+            background-image: url('imagens/fundo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-size: top center;
+            
+        }
+
+
+        main {
+            position: relative;
+            height: 95vh;
+        }
+       
+        iframe#tela {
+            position: relative;
+            top: 23px;
+            left: 223px;
+            height: 355px;
+            width: 155px;
+            border-radius: 20px;
+        }
+        section#telefone {
+            background-image: url('imagens/celular.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 400px;
+        }
+
+        section#botões {
+            text-align: right;
+        }
+        img {
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+        }
+
+
+    </style>
+<body>
+    <main>
+        <section id="telefone">
+            <iframe src="pag002.html" frameborder="0" id="tela" name="tela"></iframe>
+        </section>
+        
+        <section id="botões">
+              <a href="pag001.html" target="tela"><img src="imagens/github.png" alt=""></a>
+        </section>
+    </main>
+    
+</body>
+</html>

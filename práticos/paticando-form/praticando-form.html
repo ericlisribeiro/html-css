@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Cadastro do HOMEM</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required
+                minlength="3" maxlength="50" placeholder="digite aqui...">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="isobrenome" required
+                minlength="5" maxlength="50" placeholder="digite aqui...">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="telefone" id="itel"
+                 placeholder="(xx)9xxxx-xxxx">
+            </p>
+            <p>
+                <label for="ie-mail">E-mail</label>
+                <input type="email" name="e-mail" id="ie-mail">
+            </p>
+            <p>
+                <label for="isenha">senha</label>
+                <input type="password" name="senha" id="isenha" autocomplete="current-password">
+            </p>
+            <p>
+                <label for="inota">Nota</label>
+                <input type="number" name="nota" id="inota" min="1"
+                max="10" step="0.1">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nascimento</legend>
+            <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="ihora">Hora</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+
+        </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <p>
+                    <input type="radio" name="sexo" id="imasc">
+                    <label for="imasc">Masculino</label><br>
+                    <input type="radio" name="sexo" id="ifem">
+                    <label for="ifem">Feminino</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Esportes</legend>
+
+                <p>
+                    <input type="checkbox" name="futebol" id="ifut">
+                    <label for="ifut">Futebol</label><br>
+                    <input type="checkbox" name="basquete" id="ibas">
+                    <label for="ibas">Basquete</label><br>
+                    <input type="checkbox" name="volei" id="ivol">
+                    <label for="ivol">Vôlei</label><br>
+                    <input type="checkbox" name="futebol-americano" id="ifuta">
+                    <label for="ifuta">Futebol-Americano</label><br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Estados</legend>
+
+                    <p>
+                        <label for="iest">Estado</label>
+                        <select name="estado" id="iest">
+
+                            <option value="" selected>-- Escolha --</option>
+                            <optgroup label="Região Sudeste">
+                                <option value="RJ">Rio de janeiro</option>
+                                <option value="SP">São paulo</option>
+                                <option value="MG">Minas Gerais</option>
+                            </optgroup>
+                            <optgroup label="Região Nordeste">
+                                <option value="PM">Pernambuco</option>
+                                <option value="RN">Rio grande do Norte</option>
+                                <option value="MA">Maranhão</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                        <label for="iprof"></label>
+                        <input type="text" name="Prof" id="iprof" 
+                        list="lstprof">
+                        <datalist id="lstprof">
+                            <option>Administrador</option>
+                            <option>Desenvolvedor</option>
+                            <option>Professor</option>
+                        </datalist>
+                    </p>
+            </fieldset>
+
+    </form>
+    
+</body>
+</html>
